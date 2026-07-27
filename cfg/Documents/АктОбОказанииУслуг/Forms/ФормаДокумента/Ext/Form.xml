@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Организация" id="7">
+			<DataPath>Объект.Организация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Контрагент" id="10">
+			<DataPath>Объект.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Договор" id="13">
+			<DataPath>Объект.Договор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоговорКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Комментарий" id="16">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="РаботыИУслуги" id="19">
+			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.РаботыИУслуги</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РаботыИУслугиКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="РаботыИУслугиКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="РаботыИУслугиРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="РаботыИУслугиСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>РаботыИУслуги</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаботыИУслугиСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="РаботыИУслугиСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РаботыИУслугиСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>РаботыИУслуги</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаботыИУслугиСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="РаботыИУслугиСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РаботыИУслугиУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>РаботыИУслуги</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РаботыИУслугиУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="РаботыИУслугиУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">РаботыИУслугиПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="РаботыИУслугиНомерСтроки" id="32">
+					<DataPath>Объект.РаботыИУслуги.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="РаботыИУслугиНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="РаботыИУслугиНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="РаботыИУслугиНоменклатура" id="35">
+					<DataPath>Объект.РаботыИУслуги.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиНоменклатураКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="РаботыИУслугиНоменклатураРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="ChoiceProcessing">РаботыИУслугиНоменклатураОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="РаботыИУслугиКоличество" id="38">
+					<DataPath>Объект.РаботыИУслуги.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиКоличествоКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="РаботыИУслугиКоличествоРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">РаботыИУслугиКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="РаботыИУслугиЕдиницаИзмерения" id="41">
+					<DataPath>Объект.РаботыИУслуги.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиЕдиницаИзмеренияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="РаботыИУслугиЕдиницаИзмеренияРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="РаботыИУслугиПроцентСкидки" id="44">
+					<DataPath>Объект.РаботыИУслуги.ПроцентСкидки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиПроцентСкидкиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="РаботыИУслугиПроцентСкидкиРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">РаботыИУслугиПроцентСкидкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="РаботыИУслугиЦена" id="47">
+					<DataPath>Объект.РаботыИУслуги.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиЦенаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="РаботыИУслугиЦенаРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">РаботыИУслугиЦенаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="РаботыИУслугиСумма" id="50">
+					<DataPath>Объект.РаботыИУслуги.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиСуммаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="РаботыИУслугиСуммаРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="РаботыИУслугиСодержание" id="53">
+					<DataPath>Объект.РаботыИУслуги.Содержание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РаботыИУслугиСодержаниеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="РаботыИУслугиСодержаниеРасширеннаяПодсказка" id="55"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АктОбОказанииУслуг</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

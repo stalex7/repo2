@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="19">
+			<Group>HorizontalIfPossible</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="ВидКонтрагента" id="16">
+					<DataPath>Объект.ВидКонтрагента</DataPath>
+					<ContextMenu name="ВидКонтрагентаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ВидКонтрагентаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<CheckBoxField name="Поставщик" id="35">
+					<DataPath>Объект.Поставщик</DataPath>
+					<ContextMenu name="ПоставщикКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<CheckBoxField name="Покупатель" id="38">
+					<DataPath>Объект.Покупатель</DataPath>
+					<ContextMenu name="ПокупательКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПокупательРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПрочиеОтношения" id="41">
+					<DataPath>Объект.ПрочиеОтношения</DataPath>
+					<ContextMenu name="ПрочиеОтношенияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПрочиеОтношенияРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="НаименованиеПолное" id="21">
+			<DataPath>Объект.НаименованиеПолное</DataPath>
+			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="БанковскийСчетПоУмолчанию" id="153">
+			<DataPath>Объект.БанковскийСчетПоУмолчанию</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="БанковскийСчетПоУмолчаниюКонтекстноеМеню" id="154"/>
+			<ExtendedTooltip name="БанковскийСчетПоУмолчаниюРасширеннаяПодсказка" id="155"/>
+		</InputField>
+		<InputField name="ИНН" id="149">
+			<DataPath>Объект.ИНН</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИННКонтекстноеМеню" id="150"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="151"/>
+		</InputField>
+		<InputField name="Страна" id="24">
+			<DataPath>Объект.СтранаРегистрации</DataPath>
+			<ContextMenu name="СтранаКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="СтранаРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<UsualGroup name="Контакт" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контакт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контакт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="КонтактРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="ОсновноеКонтактноеЛицо" id="27">
+					<DataPath>Объект.ОсновноеКонтактноеЛицо</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОсновноеКонтактноеЛицоКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ОсновноеКонтактноеЛицоРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ОсновноеКонтактноеЛицоТелефон" id="30">
+					<DataPath>Объект.ОсновноеКонтактноеЛицо.Телефон</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОсновноеКонтактноеЛицоТелефонКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ОсновноеКонтактноеЛицоТелефонРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ЮрАдрес" id="44">
+					<DataPath>Объект.ЮрАдрес</DataPath>
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>80</MaxWidth>
+					<Height>5</Height>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЮрАдресКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ЮрАдресРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДополнительныеРеквизиты" id="59">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДополнительныеРеквизиты</DataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДополнительныеРеквизитыКонтекстноеМеню" id="60"/>
+			<AutoCommandBar name="ДополнительныеРеквизитыКоманднаяПанель" id="61"/>
+			<ExtendedTooltip name="ДополнительныеРеквизитыРасширеннаяПодсказка" id="62"/>
+			<SearchStringAddition name="ДополнительныеРеквизитыСтрокаПоиска" id="63">
+				<AdditionSource>
+					<Item>ДополнительныеРеквизиты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеРеквизитыСтрокаПоискаКонтекстноеМеню" id="64"/>
+				<ExtendedTooltip name="ДополнительныеРеквизитыСтрокаПоискаРасширеннаяПодсказка" id="65"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДополнительныеРеквизитыСостояниеПросмотра" id="66">
+				<AdditionSource>
+					<Item>ДополнительныеРеквизиты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеРеквизитыСостояниеПросмотраКонтекстноеМеню" id="67"/>
+				<ExtendedTooltip name="ДополнительныеРеквизитыСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДополнительныеРеквизитыУправлениеПоиском" id="69">
+				<AdditionSource>
+					<Item>ДополнительныеРеквизиты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеРеквизитыУправлениеПоискомКонтекстноеМеню" id="70"/>
+				<ExtendedTooltip name="ДополнительныеРеквизитыУправлениеПоискомРасширеннаяПодсказка" id="71"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДополнительныеРеквизитыНомерСтроки" id="80">
+					<DataPath>Объект.ДополнительныеРеквизиты.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДополнительныеРеквизитыНомерСтрокиКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДополнительныеРеквизитыНомерСтрокиРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<InputField name="ДополнительныеРеквизитыСвойство" id="84">
+					<DataPath>Объект.ДополнительныеРеквизиты.Свойство</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДополнительныеРеквизитыСвойствоКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ДополнительныеРеквизитыСвойствоРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<InputField name="ДополнительныеРеквизитыЗначение" id="88">
+					<DataPath>Объект.ДополнительныеРеквизиты.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Items.ДополнительныеРеквизиты.CurrentData.Свойство</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<TypeLink>
+						<xr:DataPath>Items.ДополнительныеРеквизиты.CurrentData.Свойство</xr:DataPath>
+						<xr:LinkItem>0</xr:LinkItem>
+					</TypeLink>
+					<ContextMenu name="ДополнительныеРеквизитыЗначениеКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ДополнительныеРеквизитыЗначениеРасширеннаяПодсказка" id="90"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
