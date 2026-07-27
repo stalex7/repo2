@@ -116,6 +116,9 @@
 							<AutoEditMode>true</AutoEditMode>
 							<ContextMenu name="ДоговорКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ДоговорПриИзменении</Event>
+							</Events>
 						</InputField>
 						<InputField name="БанковскийСчет" id="195">
 							<DataPath>1/0:e7b3d047-96c1-4f0c-9612-d1ffaa5e152c</DataPath>
